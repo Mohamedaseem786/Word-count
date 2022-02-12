@@ -6,31 +6,39 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-create a file and then open the reqiured file by using with function.
+creat a .txt file add sentence to it
+
+
 ### Step 2: 
- assign a variable as 0.
-### Step 3: 
-then use the for loop for assigning the i value in the file.
-### Step 4:  
-use split() to split the file.
-### Step 5: 
-using for loop count the numbewr of words.
-### Step 6: 
-print the number of words.
+using open() open the .txt file in read mode in python compiler
+ 
+### Step 3:
+assign a variable for value zero 
+
+### Step 4:
+using the for loop assigning the fp then use variable to split the content
+
+### Step 5:
+itrate in nested loop to increment the variable 
+
+### Step 6:
+print the variable 
+
 ## PROGRAM:
-```
-with open("file1.txt","r") as fp:
+with open('paradata.txt','r') as fp:
     count=0
-    for data in fp:
-        l=data.split()
-        for i in l:
+    for word in fp:
+        para=word.split()
+        for i in para:
             count+=1
-    print("No of words",count)
-```
+    print('total number of words',count)
 
 ### OUTPUT:
-![](./out2.png)
-![](./out1.png)
+
+text file:
+![gitlogo](1.png)
+![gitlogo](2.png)
+
 
 
 ## RESULT:
